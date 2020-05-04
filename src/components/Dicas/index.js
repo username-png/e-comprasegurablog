@@ -18,18 +18,19 @@ class Dicas extends React.Component {
       posts.map(({ node: post }) => (
        
             <Card className='dicasCard' >
+              <Card.Header>
               <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
+              </Card.Header>
+              
               <Card.Body>
                 <Card.Title className='dicasText'>{post.frontmatter.title}</Card.Title>
-                <Card.Text className='dicasText'>{post.description}</Card.Text>
-                < Button variant="primary"><Link className="button" to={post.fields.slug}>
-                        Leia mais→
-                      </Link></Button>
+                <Card.Text className='dicasText'>{post.frontmatter.description}</Card.Text>
+                < Button variant="primary">Leia mais...</Button>
               </Card.Body>
               <Card.Footer>
                 <small className='dicasText'>{post.frontmatter.date}</small>
@@ -66,16 +67,16 @@ export default () => (
             frontmatter {
               title
               templateKey
+              description
               date(formatString: "MMMM DD, YYYY")
               featuredpost
               featuredimage {
                 childImageSharp {
-                  fluid(maxWidth: 800, quality: 100) {
+                  fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
-              description
             }
           }
         }

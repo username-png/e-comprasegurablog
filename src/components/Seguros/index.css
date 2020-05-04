@@ -1,0 +1,29 @@
+.segurosMain {
+  background-color: #4762e5;
+  color: #f2f4ff;
+  /*height: 1024px;*/
+  border-radius: 0;
+  
+  padding-left: 70px; 
+  margin: 0; 
+  
+}
+.segurosH1{
+  padding: 5px;
+}
+
+.segurosLista{
+  color:#f2f4ff;
+  text-decoration:none;
+  float: right;
+}
+
+p {
+  padding-top: 20px;
+}
+
+hr {
+  background-color: #f2f4ff;
+  padding: 3px;
+  color: #f2f4ff;
+}

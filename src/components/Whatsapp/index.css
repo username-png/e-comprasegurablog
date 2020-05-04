@@ -1,0 +1,17 @@
+.whatsappMain{
+  background-color: #F2F4FF;
+  color: #6be6ff;
+  /*height: 1024px;*/
+  padding-top: 12%;
+  padding-left: 70px; 
+  margin: 0; 
+  border-radius: 0;
+}
+
+.whatsappRow{
+  padding-top:15px;
+}
+
+.whatsappInput {
+  width: 50%;
+}
