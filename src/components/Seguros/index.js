@@ -9,7 +9,7 @@ const Seguros = () => (
         Sites seguros - Top 5
       </h1>
       <hr />
-      <h1 className='segurosH1'> 1. https://www.google.com</h1>
+      <h1> 1. https://www.google.com</h1>
       <h1 className='segurosH1'> 2. https://www.google.com</h1>
       <h1 className='segurosH1'> 3. https://www.google.com</h1>
       <h1 className='segurosH1'> 4. https://www.google.com</h1>

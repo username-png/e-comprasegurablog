@@ -9,7 +9,8 @@ class Posts extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    
+    
     return (
       <div className="columns is-multiline">
         <Container className="postContainer">
@@ -18,7 +19,8 @@ class Posts extends React.Component {
             <CardDeck>
             {posts &&
           posts.map(({ node: post }) => (
-            <Card className='postCard' >
+          <Col sm={6} className='postCard'>
+          <Card className='postCard' >
               <Card.Header>
               <PreviewCompatibleImage
                         imageInfo={{
@@ -35,8 +37,12 @@ class Posts extends React.Component {
                 <Card.Text className='postText'>
                 {post.frontmatter.date}
                 </Card.Text>
+                <a href={post.fields.slug} style={{float:"right"}}><Button variant="primary">Leia Mais...</Button></a>
               </Card.Body>
             </Card>
+            </Col>
+           
+			
           ))}
           </CardDeck>
             </Col>
