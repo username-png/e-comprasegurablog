@@ -1,40 +1,25 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import {Navbar, Nav} from 'react-bootstrap'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
+const Header = () => (
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
+      <Navbar bg="light" expand="sm" collapseOnSelect>
+        <Navbar.Brand href="/">E-CompraSegura</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/about">Sobre</Nav.Link>
+            <Nav.Link href="/blog">Dicas</Nav.Link>
+            <Nav.Link href="/securitypages">Sites Seguros</Nav.Link>
+            <Nav.Link href="/falsepages">Sites Inseguros</Nav.Link>
+            <Nav.Link href="/contact">Cadastro</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
-  render() {
-    return (
-      <nav
+      /**
+       * <nav
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
@@ -44,7 +29,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
             </Link>
-            {/* Hamburger menu */}
+            {/* Hamburger menu }
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -61,19 +46,19 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+                Sobre
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                Dicas
+              </Link>
+              <Link className="navbar-item" to="/securitypages">
+                Sites Seguros
+              </Link>
+              <Link className="navbar-item" to="/falsepages">
+                Sites Fraudulentos
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                Cadastro
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
@@ -90,9 +75,8 @@ const Navbar = class extends React.Component {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> 
+      */
     )
-  }
-}
 
-export default Navbar
+export default Header

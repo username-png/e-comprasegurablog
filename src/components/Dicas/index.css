@@ -1,0 +1,26 @@
+.dicasMain {
+  background-color: #F2F4FF;
+  margin: 0;
+  border-radius: 0;
+}
+
+.dicasCard{
+  background-color:#6be6ff
+}
+
+.dicasText{
+  color: #4762e5
+}
+
+.postContainer{
+  margin-top:100px
+}
+
+.postCard{
+  background-color: white;
+  color: black;
+}
+
+.postText {
+  text-align: center;
+}
