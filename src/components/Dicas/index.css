@@ -5,7 +5,8 @@
 }
 
 .dicasCard{
-  background-color:#6be6ff
+  background-color:#6be6ff;
+  max-width: 300;
 }
 
 .dicasText{
