@@ -9,11 +9,11 @@ const Inseguros = () => (
         Sites Inseguros - Top 5
       </h1>
       <hr />
-      <p className='segurosH1'> 1. https://www.google.com</p>
-      <p className='segurosH1'> 2. https://www.google.com</p>
-      <p className='segurosH1'> 3. https://www.google.com</p>
-      <p className='segurosH1'> 4. https://www.google.com</p>
-      <p className='segurosH1'> 5. https://www.google.com</p>
+      <p className='segurosH1'> 1. https://luadishop.com.br</p>
+      <p className='segurosH1'> 2. https://offthewall.com.br</p>
+      <p className='segurosH1'> 3. https://pneusdrive.com.br</p>
+      <p className='segurosH1'> 4. https://logusapostilas.com</p>
+      <p className='segurosH1'> 5. https://tenisrun.com.br</p>
       
       <p>
       <Link
