@@ -1,5 +1,5 @@
 import React from 'react'
-import {Jumbotron} from 'react-bootstrap'
+import {Jumbotron,Col} from 'react-bootstrap'
 import {Link} from 'gatsby'
 import './index.css'
 
@@ -9,6 +9,7 @@ const Seguros = () => (
         Sites seguros - Top 5
       </h1>
       <hr />
+      <Col>
       <p className='segurosH1'> 1. https://www.mercadolivre.com.br/</p>
       <p className='segurosH1'> 2. https://www.americanas.com.br/</p>
       <p className='segurosH1'> 3. https://www.buscape.com.br/</p>
@@ -22,6 +23,7 @@ const Seguros = () => (
         >Veja Lista Completa
         </Link>
       </p>
+      </Col>
     </Jumbotron>
 )
 
