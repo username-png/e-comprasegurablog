@@ -9,19 +9,19 @@ const Seguros = () => (
         Sites seguros - Top 5
       </h1>
       <hr />
-      <h1> 1. https://www.google.com</h1>
-      <h1 className='segurosH1'> 2. https://www.google.com</h1>
-      <h1 className='segurosH1'> 3. https://www.google.com</h1>
-      <h1 className='segurosH1'> 4. https://www.google.com</h1>
-      <h1 className='segurosH1'> 5. https://www.google.com</h1>
+      <p className='segurosH1'> 1. https://www.google.com</p>
+      <p className='segurosH1'> 2. https://www.google.com</p>
+      <p className='segurosH1'> 3. https://www.google.com</p>
+      <p className='segurosH1'> 4. https://www.google.com</p>
+      <p className='segurosH1'> 5. https://www.google.com</p>
       
-      <h1>
+      <p>
       <Link
-          to="/SitesSeguros/"
+          to="/securitypages/"
           className='segurosLista'          
         >Veja Lista Completa
         </Link>
-      </h1>
+      </p>
     </Jumbotron>
 )
 
