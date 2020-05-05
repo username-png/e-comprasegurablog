@@ -30,9 +30,9 @@ class Dicas extends React.Component {
               <Card.Body>
                 <Card.Title className='dicasText'>{post.frontmatter.title}</Card.Title>
                 <Card.Text className='dicasText'>{post.frontmatter.description}</Card.Text>
-                < Button variant="primary">Leia mais...</Button>
+                <a href={post.fields.slug}>< Button variant="primary">Leia mais...</Button></a>
               </Card.Body>
-              <Card.Footer>
+              <Card.Footer className='dicasCard'>
                 <small className='dicasText'>{post.frontmatter.date}</small>
               </Card.Footer>
             </Card>
